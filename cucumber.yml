@@ -1,0 +1,3 @@
+default: --no-source --color --format pretty
+
+regressao: -t @client_register_ative -t @list_active_client -t @transaction_active_client -t @list_transactions
