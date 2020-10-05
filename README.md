@@ -1,45 +1,47 @@
-# Desafio QA Constructor
+# QA Challenge
 
-Nesse projeto foi automatizado um sistema web e uma API Rest.
-Em seguida esta descrito os pré-requisitos para e como rodar a automação.
-Todos os BDDs e os steps, tanto do sistema web, quanto da API, esta na pasta "features".
-Além disso, dentro do projeto, existe um relatorio, com o nome de "Desafio QA Constructor", com o plano de teste e os casos de teste, detalhando todos os casos abordados e mostrando os bugs encontrados.
+This challenge has three parts, the test cases on Google spreadsheet, the details and steps of the bugs on Trello, and also an automated test, using selenium and ruby.
 
-Obrigado pela oportunidade.
-Espero que gostem.
+## Manual tests
+The test case spreadsheet obtain all the tests that I executed on the system divided by 2 system, that is the Zero Bank Test Case and the E-Commerce Test Case. Both of the spreadsheet has a collum "Trello Card" that has a link of the detailed bug on trello. 
+Only Test cases with bugs have a link on this collum.
 
-## Pré-requisitos
+## Automated tests
+The automated test includes just the E-Commerce system, as the challenge asks.
+The automation was build using Ruby, Selenium Webdriver, Chromedriver, Rspec, Cucumber, and Site Prism.
+I used this stack becouse is the fastest way to develop an automated test with my expertise
+
+# Installation Process
+
+## Requirements and installation
+
+1. install ``` Ruby LTS ``` -> https://www.ruby-lang.org/en/downloads/
+
+2. Download and install Google Chrome
+
+3. Download and Install ``` Chromedriver LTS ``` -> https://chromedriver.storage.googleapis.com/index.html?path=86.0.4240.22/
+
+4. Clone the project
+
+5. Inside the project folder run ``` gem install bundler ```
+
+6. Inside the project folder run ``` bundle install ```
+
+Now the project is setted
+
+
+## Starting
+
+Inside the project folder, you can run the command ``` cucumber ``` that will run all the automated scenarios.
+
+If you want to run specifics scenarios you can run:
 
 ```
-Ruby 2.4.2
-Chromedriver 2.40
-Bundler
-```
 
-## Começando
+cucumber -t @add_product_cart
 
-Para que todos os frameworks funcionem no projeto, é necessário rodar o seguinte comando:
+cucumber -t @contact_us
 
-```
-bundle install
-```
-Em seguida já é possível usar os seguintes comandos, para rodar a automação:
-PS. Todos os cenários são descritos, por funcionalidade, dentro do documento "Desafio QA Constructor".
+cucumber -t @login
 
-```
-Front-End:
-cucumber -t @client_register_active
-
-cucumber -t @client_register_inactive_random
-
-cucumber -t @list_active_client
-
-cucumber -t @transaction_active_client
-
-cucumber -t @list_transactions
-
-cucumber -t @regression
-
-Back-End:
-cucumber -t @get_api
 ```

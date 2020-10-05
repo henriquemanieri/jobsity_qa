@@ -13,12 +13,4 @@ class CartPage < SitePrism::Page
      expect(totalProductPriceCart).to eq(totalPrice)
   end
 
-  def search_all_transactions
-    searchButton.click
-  end
-
-  def confirm_transaction
-    assert_text("Venda realizada com sucesso")
-  end
-
 end
