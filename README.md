@@ -6,6 +6,13 @@ This challenge has three parts, the test cases on Google spreadsheet, the detail
 The test case spreadsheet obtain all the tests that I executed on the system divided by 2 system, that is the Zero Bank Test Case and the E-Commerce Test Case. Both of the spreadsheet has a collum "Trello Card" that has a link of the detailed bug on trello. 
 Only Test cases with bugs have a link on this collum.
 
+### Links
+- Zero Bank Test Cases -> https://docs.google.com/spreadsheets/d/1wGoE75SF1OOmj696fbPq4VOoRxj6ZZzw7qJ9XgoX8XM/edit#gid=0
+- E-Commerce Test Cases -> https://docs.google.com/spreadsheets/d/1wGoE75SF1OOmj696fbPq4VOoRxj6ZZzw7qJ9XgoX8XM/edit#gid=1930368073
+- Zero Bank Trello -> https://trello.com/b/FPetWYsU/zero-bank-bugs
+- E-Commerce Trello -> https://trello.com/b/MU8skIUz/e-commerce-bugs
+- Automation repo -> https://github.com/henriquemanieri/jobsity_qa
+
 ## Automated tests
 The automated test includes just the E-Commerce system, as the challenge asks.
 The automation was build using Ruby, Selenium Webdriver, Chromedriver, Rspec, Cucumber, and Site Prism.
